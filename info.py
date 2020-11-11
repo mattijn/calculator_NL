@@ -20,19 +20,14 @@ def relations_power_root_log():
     r0c2.success('Om b te bepalen')
 
     r1c0, r1c1, r1c2 = st.beta_columns(3)
-    r1c0.info('a+b  \n a-b')
-    r1c1.info('(a+b)−b  \n (a−b)+b')
-    r1c2.info('(a+b)−a  \n a−(a−b)')
+    r1c0.info('a+b  \n a×b  \n a↑b')
+    r1c1.info('(a+b)−b  \n (a×b)÷b  \n (a↑b)↓b') # 
+    r1c2.info('(a+b)−a  \n (a×b)÷a  \n (a↑b)⇓a')
 
     r2c0, r2c1, r2c2 = st.beta_columns(3)
-    r2c0.info('a×b  \n a÷b')
-    r2c1.info('(a×b)÷b  \n (a÷b)×b')
-    r2c2.info('(a×b)÷a  \n a÷(a÷b)')
-
-    r3c0, r3c1, r3c2 = st.beta_columns(3)
-    r3c0.info('a↑b  \n a↓b  \n a⇓b')
-    r3c1.info('(a↑b)↓b  \n (a↓b)↑b  \n b↑(a⇓b)')
-    r3c2.info('(a↑b)⇓a  \n a⇓(a↓b)  \n a↓(a⇓b)')
+    r2c0.info('a-b  \n a÷b  \n a↓b')
+    r2c1.info('(a−b)+b  \n (a÷b)×b  \n (a↓b)↑b')
+    r2c2.info('a−(a−b)  \n a÷(a÷b)  \n a⇓(a↓b)')
  
 def usage_example():
     st.markdown((

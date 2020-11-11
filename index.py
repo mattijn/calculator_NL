@@ -10,7 +10,7 @@ st.markdown((
     'Het boek _Numbers_ is geschreven door Steven Pemberton, onderzoeker aan CWI-Amsterdam.'
     ))
 
-page_header = st.beta_expander("Klik voor meer infomatief over deze rekenmachine", expanded=False)
+page_header = st.beta_expander("Klik voor meer infomatie over deze rekenmachine", expanded=False)
 with page_header:
     header()
 
